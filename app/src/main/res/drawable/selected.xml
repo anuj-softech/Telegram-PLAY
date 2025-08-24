@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blink"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/selected_outline"
+        android:interpolator="@android:anim/fade_in"
+        android:duration="1200" />
+    <item
+        android:drawable="@drawable/trans"
+        android:interpolator="@android:anim/fade_out"
+        android:duration="500" />
+
+</animation-list>

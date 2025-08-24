@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/metadata"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="23 Jan 2024 11:30 AM"
+        android:textColor="#9FFFFFFF"
+        android:textSize="12sp" />
+</LinearLayout>

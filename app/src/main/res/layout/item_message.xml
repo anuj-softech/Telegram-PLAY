@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/mainframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#1effffff"
+        android:background="@drawable/rounded_block"
+        android:padding="3dp">
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

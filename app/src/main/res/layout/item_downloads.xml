@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/maindoc"
+        layout="@layout/item_document" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dnldstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="dsds"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/localpath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="ddsdsds"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/dnldprog"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:progress="0"
+        android:progressTint="@color/primary"
+        android:secondaryProgress="100"
+        android:secondaryProgressTint="@color/tertiary" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/epgback"
+    android:layout_margin="8dp"
+    android:paddingRight="8dp"
+    android:id="@+id/linear1">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/selectb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical|right"
+        android:buttonTint="@color/white"
+        android:padding="0dp">
+
+    </androidx.appcompat.widget.AppCompatCheckBox>
+
+    <TextView
+        android:id="@+id/titletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="20dp"
+        android:translationY="-10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/trackdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:translationY="8dp"
+        android:textColor="#ffffff"
+        android:text="TextView"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="20dp"
+        android:textSize="10sp" />
+</FrameLayout>

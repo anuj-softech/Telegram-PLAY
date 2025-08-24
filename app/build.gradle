@@ -1,0 +1,59 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.rock.tgplay'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.rock.tgplay"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation(libs.leanback)
+    implementation(libs.circleimageview)
+
+    implementation files('libs/ffmpeg.aar')
+    implementation libs.media3.exoplayer
+    implementation libs.androidx.media3.exoplayer.dash
+    implementation libs.androidx.media3.ui
+    implementation libs.androidx.media3.exoplayer.hls
+    implementation libs.androidx.media3.decoder
+    implementation libs.androidx.media3.extractor
+    implementation("io.reactivex.rxjava3:rxjava:3.1.10")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
+
+}

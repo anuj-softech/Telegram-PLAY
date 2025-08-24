@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TelegramPlay" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="fontFamily">@font/nunito</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/tertiary</item>
+        <item name="android:statusBarColor">@color/secondary</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Base.Theme.TelegramPlay.Player" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="fontFamily"> @font/nunito</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/tertiary</item>
+    </style>
+
+    <style name="Theme.TelegramPlay" parent="Base.Theme.TelegramPlay" />
+    <style name="Theme.TelegramPlay.splash" parent="Base.Theme.TelegramPlay" >
+    </style>
+</resources>

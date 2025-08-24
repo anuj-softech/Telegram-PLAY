@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.view.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/chat_background">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/chat_title_background"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="Downloads"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/downloads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="64dp"
+            android:nextFocusLeft="@id/chatsGridView"
+            android:paddingVertical="8dp"
+            tools:listitem="@layout/item_downloads"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

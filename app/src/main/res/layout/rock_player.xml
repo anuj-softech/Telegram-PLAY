@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maincont"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:ignore="UseAppTint">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#000000"
+        app:show_buffering="always"
+        app:surface_type="texture_view"
+        app:use_artwork="false"
+        app:use_controller="false" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/playerFrame"
+            android:layout_width="match_parent"
+            android:layout_height="520dp">
+
+            <include
+                android:id="@+id/p"
+                layout="@layout/rock_player_view"></include>
+        </FrameLayout>
+
+        <include
+            android:id="@+id/s"
+            android:visibility="invisible"
+            layout="@layout/rock_player_suggestion" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">#4DD9D9D9</item>
+        <item name="boxCornerRadiusTopStart">50dp</item>
+        <item name="boxCornerRadiusTopEnd">50dp</item>
+        <item name="boxCornerRadiusBottomStart">50dp</item>
+        <item name="boxCornerRadiusBottomEnd">50dp</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="placeholderTextColor">#FFFFFF</item>
+    </style>
+    <style name="EditText.Login" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/round_bg</item>
+        <item name="android:backgroundTint">#50FFFFFF</item>
+        <item name="android:padding">16dp</item>
+        <item name="singleLine">true</item>
+        <item name="android:textColorHint">#A4FFFFFF</item>
+    </style>
+    <style name="PlayerDialogStyle" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>
