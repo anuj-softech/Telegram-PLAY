@@ -1,3 +1,4 @@
+<img width="100" height="100" alt="Telegram PLAY" src="https://github.com/user-attachments/assets/632d38f5-ce06-4995-bea5-6a3d9d1ec3fe" />
 
 # Telegram Play (Android)
 
