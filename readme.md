@@ -62,6 +62,7 @@ It comes with an advanced in-app player powered by **ExoPlayer + FFmpeg**, suppo
 - **Chats may not load correctly on first open**; restarting the app usually resolves this issue.
 - Large document streaming can be slow or fail depending on file size and network conditions like Large files (more than 500 mb) do not play in IPV4 only network.
 - Minor UI glitches in certain Android versions or device screen sizes.
+- Close the app from the recent task too to prevent any unwanted downloading and data usage
 ___
 
 ## 🚀 Build the project
